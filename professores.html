@@ -1,0 +1,53 @@
+<html>
+    <head>
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyD-qcxC8ntakiGMikhb1C3ptBo49Rhxkwk",
+            authDomain: "escola-a300d.firebaseapp.com",
+            databaseURL: "https://escola-a300d-default-rtdb.firebaseio.com",
+            projectId: "escola-a300d",
+            storageBucket: "escola-a300d.appspot.com",
+            messagingSenderId: "934319533228",
+            appId: "1:934319533228:web:072159077b07ddefc1c309"
+        };
+
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="professores.js"></script>
+
+    </head>
+
+    <body>
+        <table id="tabela">
+            <tr>
+                <th></th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>formacao</th>
+                <th>email</th>
+            </tr>
+        </table>
+
+        <a href="index.html">Acesse a tabela dos alunos</a>
+        <br>
+        <a href="cursos.html">Acesse a tabela dos cursos</a>
+        <br>
+        <a href="disciplina.html">Acesse a tabela das disciplinas</a>
+
+    </body>
+</html>
